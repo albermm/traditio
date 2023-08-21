@@ -2,7 +2,6 @@ from sentence_transformers import SentenceTransformer
 from langchain.embeddings import SentenceTransformerEmbeddings
 import pinecone
 import openai
-import streamlit as st
 
 #model = SentenceTransformer('all-MiniLM-L6-v2')
 
@@ -35,6 +34,7 @@ def query_refiner(conversation, query):
     )
     return response['choices'][0]['text']
 
+'''
 def get_conversation_string():
     conversation_string = ""
     for i in range(len(st.session_state['responses'])-1):
@@ -42,3 +42,4 @@ def get_conversation_string():
         conversation_string += "Human: "+st.session_state['requests'][i] + "\n"
         conversation_string += "Bot: "+ st.session_state['responses'][i+1] + "\n"
     return conversation_string
+'''
