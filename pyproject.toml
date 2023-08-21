@@ -18,7 +18,12 @@ sentence-transformers = "^2.2.2"
 watchdog = "^3.0.0"
 flask = "^2.3.2"
 torch = "^2.0.1"
-nvidia-cublas-cu11 = {url = "https://files.pythonhosted.org/packages/7a/08/57e6b6481af73590259a9600c32a68eb853966e354fca147cde17ed9ea27/nvidia_cublas_cu11-11.10.3.66-py3-none-win_amd64.whl"}
+nvidia-cublas-cu11 = {url = "https://files.pythonhosted.org/packages/ce/41/fdeb62b5437996e841d83d7d2714ca75b886547ee8017ee2fe6ea409d983/nvidia_cublas_cu11-11.10.3.66-py3-none-manylinux1_x86_64.whl"}
+
+[[tool.poetry.source]]
+name = "nvidia-cublas-cu11"
+url = "https://files.pythonhosted.org/packages/ce/41/fdeb62b5437996e841d83d7d2714ca75b886547ee8017ee2fe6ea409d983/nvidia_cublas_cu11-11.10.3.66-py3-none-manylinux1_x86_64.whl"
+priority = "explicit"
 
 [build-system]
 requires = ["poetry-core"]
